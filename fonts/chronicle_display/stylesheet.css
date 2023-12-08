@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('ChronicleDisplay-Bold.woff2') format('woff2');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('ChronicleDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+}
+
