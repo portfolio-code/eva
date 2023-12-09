@@ -116,7 +116,7 @@ img {
 
 .linear {
     height: 20%;
-    background: linear-gradient(180deg, rgba(11, 29, 38, 0.00) 0%, #0B1D26 61.38%);
+    background: linear-gradient(180deg, rgba(11, 29, 38, 0.00) 0%, hsla(200, 54%, 10%, 1) 61.38%);
     position: absolute;
     inset: auto 0 0;
 }
@@ -224,21 +224,29 @@ header {
     display: flex;
     gap: 20px;
     align-items: center;
-    margin-bottom: 30px;
+}
+
+.header__text {
+    margin-top: 30px;
 }
 
 
 /* main ///////////////////// */
 
 main {
-    margin: 900px clamp(15px, -1.7500000000rem + 13.4375000000vw, 230px) clamp(40px, 1.5000000000rem + 5.0000000000vw, 120px);
+    margin: clamp(0px, -8.3750000000rem + 41.8750000000vw, 670px) clamp(15px, -1.7500000000rem + 13.4375000000vw, 230px) clamp(40px, 1.5000000000rem + 5.0000000000vw, 120px);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(60px, 2.0000000000rem + 8.7500000000vw, 200px);
 }
 
 /* section ///////////////////// */
 section {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 .section__content {
@@ -249,10 +257,24 @@ section {
     max-width: 632px;
     flex-grow: 1;
     flex-basis: 300px;
+    padding-left: clamp(0px, -46.8750000000rem + 46.8750000000vw, 150px);
+    position: relative;
+}
+
+.section__number {
+    color: #FFF;
+    opacity: 0.1;
+    font-family: Gilroy;
+    font-size: clamp(100px, 4.5000000000rem + 8.7500000000vw, 240px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    position: absolute;
+    top: clamp(-120px, 26.2500000000rem + -28.1250000000vw, -30px);
+    left: 0;
 }
 
 .section__img {
-    background-image: url(img/01.jpg);
     background-size: cover;
     background-position: bottom;
     max-width: 566px;
@@ -261,6 +283,29 @@ section {
     height: clamp(368px, 18.6000000000rem + 22.0000000000vw, 720px);
 }
 
+.section__img.img-01 {
+    background-image: url(img/01.jpg);
+}
+
+.section__img.img-02 {
+    background-image: url(img/02.jpg);
+    background-position: center;
+}
+
+.section__img.img-03 {
+    background-image: url(img/03.jpg);
+}
+
+.read-more {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    cursor: pointer;    
+}
+
+.read-more img {
+    width: clamp(18px, 1.0500000000rem + 0.3750000000vw, 24px);
+}
 
 
 /* media ////////////////// */
